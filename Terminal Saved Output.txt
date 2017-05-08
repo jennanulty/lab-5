@@ -1,0 +1,148 @@
+Last login: Tue May  2 12:17:38 on ttys000
+grc-russia:~ jnulty$ cd 338_02_l5
+-bash: cd: 338_02_l5: No such file or directory
+grc-russia:~ jnulty$ cd desktop
+grc-russia:desktop jnulty$ cd 338_02_L5
+grc-russia:338_02_L5 jnulty$ git -A
+Unknown option: -A
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+grc-russia:338_02_L5 jnulty$ cd ..
+grc-russia:Desktop jnulty$ cd 338_02_l5_jnulty
+grc-russia:338_02_l5_jnulty jnulty$ git commit -A
+fatal: Not a git repository (or any of the parent directories): .git
+grc-russia:338_02_l5_jnulty jnulty$ commit -A
+-bash: commit: command not found
+grc-russia:338_02_l5_jnulty jnulty$ git init
+Initialized empty Git repository in /Users/jnulty/Desktop/338_02_L5_jnulty/.git/
+grc-russia:338_02_l5_jnulty jnulty$ git add -A
+grc-russia:338_02_l5_jnulty jnulty$ git commit -m "Added files"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'jnulty@grc-russia.(none)')
+grc-russia:338_02_l5_jnulty jnulty$ jennanulty@gmail.com
+-bash: jennanulty@gmail.com: command not found
+grc-russia:338_02_l5_jnulty jnulty$  git config --global user.email "jennanulty@gmail.com"
+grc-russia:338_02_l5_jnulty jnulty$ git config --global user.name "Jenna Nulty"
+grc-russia:338_02_l5_jnulty jnulty$ git add -A
+grc-russia:338_02_l5_jnulty jnulty$ git commit -m "added files"
+[master (root-commit) 78e4f29] added files
+ 11 files changed, 6329 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 css/.DS_Store
+ create mode 100644 css/style.css
+ create mode 100644 images/.DS_Store
+ create mode 100755 images/LimeGreen.jpg
+ create mode 100755 images/Logo.ai
+ create mode 100644 images/Logo.gif
+ create mode 100755 images/black.png
+ create mode 100755 images/green.jpg
+ create mode 100755 images/white.jpg
+ create mode 100644 index.html
+grc-russia:338_02_l5_jnulty jnulty$ git remote add origin https://github.com/jennanulty/lab-5.git
+grc-russia:338_02_l5_jnulty jnulty$ git push -u origin master
+Username for 'https://github.com': jennanulty@gmail.com
+Password for 'https://jennanulty@gmail.com@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/jennanulty/lab-5.git/'
+grc-russia:338_02_l5_jnulty jnulty$ git push -u origin master
+Username for 'https://github.com': jennanulty@gmail.com
+Password for 'https://jennanulty@gmail.com@github.com': 
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 2.67 MiB | 1.77 MiB/s, done.
+Total 15 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/jennanulty/lab-5.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+grc-russia:338_02_l5_jnulty jnulty$ git commit -m "added to git hub"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+grc-russia:338_02_l5_jnulty jnulty$ git init
+Reinitialized existing Git repository in /Users/jnulty/Desktop/338_02_L5_jnulty/.git/
+grc-russia:338_02_l5_jnulty jnulty$ git add -A
+grc-russia:338_02_l5_jnulty jnulty$ git commit -m "pushes to github"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+grc-russia:338_02_l5_jnulty jnulty$ git add -am "added code"
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+grc-russia:338_02_l5_jnulty jnulty$ git commit -am "added code"
+[master 9fda054] added code
+ 1 file changed, 65 insertions(+)
+grc-russia:338_02_l5_jnulty jnulty$ git commit -am "added css"
+[master 546350c] added css
+ 2 files changed, 38 insertions(+), 1 deletion(-)
+grc-russia:338_02_l5_jnulty jnulty$ git commit -am "changed css"
+[master 2cd9363] changed css
+ 2 files changed, 30 insertions(+), 1 deletion(-)
+grc-russia:338_02_l5_jnulty jnulty$ git commit -am "changed css"
+[master 62fb9a9] changed css
+ 2 files changed, 37 insertions(+), 14 deletions(-)
+grc-russia:338_02_l5_jnulty jnulty$ git push
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 2.69 KiB | 0 bytes/s, done.
+Total 18 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 1 local object.
+To https://github.com/jennanulty/lab-5.git
+   78e4f29..62fb9a9  master -> master
+grc-russia:338_02_l5_jnulty jnulty$ git log
+commit 62fb9a9f44ea605f363ab08e8ddcec86b44b4ba7
+Author: Jenna Nulty <jennanulty@gmail.com>
+Date:   Tue May 2 13:51:15 2017 -0700
+
+    changed css
+
+commit 2cd9363f2df058dbd71da3bdbe81ee5d99bae172
+Author: Jenna Nulty <jennanulty@gmail.com>
+Date:   Tue May 2 13:27:19 2017 -0700
+
+    changed css
+
+commit 546350cc1a2557005bba4554be8672248dc34465
+Author: Jenna Nulty <jennanulty@gmail.com>
+Date:   Tue May 2 13:15:20 2017 -0700
+
+    added css
+
+commit 9fda0545431f562358bcf9b359131d04e857a0f5
+Author: Jenna Nulty <jennanulty@gmail.com>
+Date:   Tue May 2 13:08:54 2017 -0700
+
+    added code
+:
